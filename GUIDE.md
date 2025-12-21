@@ -95,7 +95,6 @@ cd TRELLIS.2
 > - [Unable to install `flash-attn` even if I first install `torch` alone #1421](https://github.com/Dao-AILab/flash-attention/issues/1421)
 > - [undefined symbol: `_ZN3c105ErrorC2ENS_14SourceLocationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE` #1832](https://github.com/Dao-AILab/flash-attention/issues/1832)
 
-
 ```shell
 pip install psutil
 pip install flash_attn==2.7.3 --no-build-isolation
