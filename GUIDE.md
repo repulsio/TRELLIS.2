@@ -104,6 +104,7 @@ pip install flash_attn==2.7.3 --no-build-isolation
 hf auth login
 
 # Enter your WRITE Access Token
+# Type and enter `Y`
 ```
 
 Finally, run the Gradio app:
