@@ -2,6 +2,8 @@
 
 This is working on the latest `TRELLIS.2` commit ([`1762f493fe7731a3b7cc6b79ad5da7b015b516c1`](https://github.com/microsoft/TRELLIS.2/commit/1762f493fe7731a3b7cc6b79ad5da7b015b516c1)).
 
+<br/>
+
 ## HyperStack
 
 You can run a `RTX-A6000` VM on **HyperStack** for **$0.50/hour** with the following specs:
@@ -30,11 +32,15 @@ You can run a `RTX-A6000` VM on **HyperStack** for **$0.50/hour** with the follo
 > [!CAUTION]
 > On Hyperstack, incoming traffic to VMs are blocked by default, so you need to create a Firewall with a rule that allows incoming TCP traffic to port `7860` (or all ports) and apply it to the VM.
 
+<br/>
+
 ## SSH into VM
 
 ```shell
 ssh ubuntu@<PUBLIC_IP_ADDRESS_OF_VM>
 ```
+
+<br/>
 
 ## Install Conda and Python
 
@@ -109,7 +115,9 @@ hf auth login
 # Type and enter `Y`
 ```
 
-Finally, run the Gradio app:
+<br/>
+
+## Run Web Demo
 
 ```shell
 GRADIO_SERVER_NAME=0.0.0.0 python app.py
