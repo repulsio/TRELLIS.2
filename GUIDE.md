@@ -66,6 +66,8 @@ source ~/.bashrc
 
 ## `TRELLIS.2`
 
+The commands below are directly from `TRELLIS.2`'s [README](https://github.com/microsoft/TRELLIS.2/blob/main/README.md):
+
 ```shell
 git clone -b main https://github.com/microsoft/TRELLIS.2.git --recursive
 cd TRELLIS.2
