@@ -82,9 +82,10 @@ cd TRELLIS.2
 > 
 > If you need to reactivate it, run `conda activate trellis2`.
 
-Because of the 2 following issues, we need to run the 2 following commands:
-- [Unable to install `flash-attn` even if I first install `torch` alone #1421](https://github.com/Dao-AILab/flash-attention/issues/1421)
-- [undefined symbol: `_ZN3c105ErrorC2ENS_14SourceLocationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE` #1832](https://github.com/Dao-AILab/flash-attention/issues/1832)
+> [!WARNING]
+> Because of the 2 following issues, we need to run the 2 following commands:
+> - [Unable to install `flash-attn` even if I first install `torch` alone #1421](https://github.com/Dao-AILab/flash-attention/issues/1421)
+> - [undefined symbol: `_ZN3c105ErrorC2ENS_14SourceLocationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE` #1832](https://github.com/Dao-AILab/flash-attention/issues/1832)
 
 
 ```shell
@@ -92,11 +93,12 @@ pip install psutil
 pip install flash_attn==2.7.3 --no-build-isolation
 ```
 
-Unfortunately, `TRELLIS.2` has 2 gated models as dependencies:
-1. [`facebook/dinov3-vitl16-pretrain-lvd1689m`](https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m)
-2. [`briaai/RMBG-2.0`](https://huggingface.co/briaai/RMBG-2.0)
-
-Because of this, you need to create a HuggingFace account and request access to both of these models. Then, you need to create a HuggingFace **WRITE Access Token** for your account.
+> [!WARNING]
+> Unfortunately, `TRELLIS.2` has 2 gated models as dependencies:
+> 1. [`facebook/dinov3-vitl16-pretrain-lvd1689m`](https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m)
+> 2. [`briaai/RMBG-2.0`](https://huggingface.co/briaai/RMBG-2.0)
+> 
+> Because of this, you need to create a HuggingFace account and request access to both of these models. Then, you need to create a HuggingFace **WRITE Access Token** for your account.
 
 ```shell
 hf auth login
