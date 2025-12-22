@@ -96,16 +96,6 @@ pip install Pillow==10.4.0
 > If you need to reactivate it, run `conda activate trellis2`.
 
 > [!WARNING]
-> Because of the 2 following issues, we need to run the 2 following commands:
-> - [Unable to install `flash-attn` even if I first install `torch` alone #1421](https://github.com/Dao-AILab/flash-attention/issues/1421)
-> - [undefined symbol: `_ZN3c105ErrorC2ENS_14SourceLocationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE` #1832](https://github.com/Dao-AILab/flash-attention/issues/1832)
-
-```shell
-pip install psutil
-pip install flash_attn==2.7.3 --no-build-isolation
-```
-
-> [!WARNING]
 > Unfortunately, `TRELLIS.2` has 2 gated models as dependencies:
 > 1. [`facebook/dinov3-vitl16-pretrain-lvd1689m`](https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m)
 > 2. [`briaai/RMBG-2.0`](https://huggingface.co/briaai/RMBG-2.0)
