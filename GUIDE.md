@@ -52,23 +52,13 @@ ssh ubuntu@<PUBLIC_IP_ADDRESS_OF_VM>
 <br/>
 
 ```shell
-curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
-
-bash Anaconda3-2023.03-1-Linux-x86_64.sh
-
-# Press `Enter`
-# Press `q` to move to bottom of agreement
-# Type and enter `yes`
-# Press `Enter`
-# Type and enter `yes`
-
-source ~/.bashrc
+curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+bash Anaconda3-2024.10-1-Linux-x86_64.sh -b -p $HOME/anaconda3
+source $HOME/anaconda3/bin/activate
 ```
 
 > [!NOTE]
-> Installing `Anaconda3-2023.03-1` also installs `Python 3.10.9`.
-> 
-> `TRELLIS.2`'s [`setup.sh`](https://github.com/microsoft/TRELLIS.2/blob/main/setup.sh) uses `Python 3.10`. I checked that `Anaconda3-2023.03-1` is the last version that ships with `Python 3.10`.
+> Installing `Anaconda3-2024.10-1` also installs `Python 3.12.7`. I checked that this is the last Anaconda version that comes with `Python 3.12`.
 
 ## `TRELLIS.2`
 
@@ -79,8 +69,6 @@ git clone -b main https://github.com/microsoft/TRELLIS.2.git --recursive
 cd TRELLIS.2
 
 . ./setup.sh --new-env --basic --flash-attn --nvdiffrast --nvdiffrec --cumesh --o-voxel --flexgemm
-
-# Type and enter `y`
 ```
 
 > [!NOTE]
