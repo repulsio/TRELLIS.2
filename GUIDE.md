@@ -114,7 +114,7 @@ hf auth login
 ## Run Web Demo
 
 ```shell
-GRADIO_SERVER_NAME=0.0.0.0 python app.py
+GRADIO_SERVER_NAME=0.0.0.0 GRADIO_SERVER_PORT=7860 python app.py
 ```
 
 Open `http://<PUBLIC_IP_ADDRESS_OF_VM>:7860` in your web browser.
