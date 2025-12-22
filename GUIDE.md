@@ -70,8 +70,16 @@ cd TRELLIS.2/
 git checkout repulsio/hyperstack
 
 . ./setup.sh --new-env --basic --flash-attn --nvdiffrast --nvdiffrec --cumesh --o-voxel --flexgemm
+```
 
-pip install Pillow==9.0.0 --no-build-isolation
+> [!WARNING]
+> Because of the error:
+> > AttributeError: module 'PIL._webp' has no attribute 'HAVE_WEBPANIM'
+> 
+> `HAVE_WEBPANIM` was removed in the [commit](https://github.com/python-pillow/Pillow/commit/a3468996c0b7b6df2b685ff21c4f515f5105ff8c) prior to release `11.0.0`, so we have to use the previous version `10.4.0`.
+
+```shell
+pip install Pillow==10.4.0
 ```
 
 > [!IMPORTANT]
