@@ -65,8 +65,9 @@ source $HOME/anaconda3/bin/activate
 The commands below are directly from `TRELLIS.2`'s [README](https://github.com/microsoft/TRELLIS.2/blob/main/README.md):
 
 ```shell
-git clone -b main https://github.com/microsoft/TRELLIS.2.git --recursive
-cd TRELLIS.2
+git clone -b main https://github.com/repulsio/TRELLIS.2.git --recursive
+cd TRELLIS.2/
+git checkout repulsio/hyperstack
 
 . ./setup.sh --new-env --basic --flash-attn --nvdiffrast --nvdiffrec --cumesh --o-voxel --flexgemm
 ```
