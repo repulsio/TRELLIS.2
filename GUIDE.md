@@ -70,7 +70,15 @@ cd TRELLIS.2/
 git checkout repulsio/hyperstack
 
 . ./setup.sh --new-env --basic --flash-attn --nvdiffrast --nvdiffrec --cumesh --o-voxel --flexgemm
+
+pip install Pillow==9.0.0 --no-build-isolation
 ```
+
+> [!IMPORTANT]
+> Here is the [link to the diff](https://github.com/microsoft/TRELLIS.2/compare/main...repulsio:repulsio/hyperstack) between
+>
+> - the official `microsoft/TRELLIS - main` and
+> - my fork `repulsio/TRELLIS - repulsio/hyperstack`
 
 > [!NOTE]
 > The above command creates a Conda virtual environment named `trellis2` and activates it.

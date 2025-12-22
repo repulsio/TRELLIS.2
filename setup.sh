@@ -67,7 +67,7 @@ else
 fi
 
 if [ "$NEW_ENV" = true ] ; then
-    conda create -n trellis2 python=3.12 -y
+    conda create -n trellis2 python=3.10 -y
     conda activate trellis2
     if [ "$PLATFORM" = "cuda" ] ; then
         pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
