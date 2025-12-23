@@ -72,6 +72,19 @@ git checkout repulsio/hyperstack
 . ./setup.sh --new-env --basic --flash-attn --nvdiffrast --nvdiffrec --cumesh --o-voxel --flexgemm
 ```
 
+> [!IMPORTANT]
+> Here is the [link to the diff](https://github.com/microsoft/TRELLIS.2/compare/main...repulsio:repulsio/hyperstack) between
+>
+> - the official `microsoft/TRELLIS.2 - main` and
+> - my fork `repulsio/TRELLIS.2 - repulsio/hyperstack`
+
+> [!NOTE]
+> The above command creates a Conda virtual environment named `trellis2` and activates it.
+> 
+> All of the below commands expect that the virtual environment `trellis2` is activated.
+> 
+> If you need to reactivate it, run `conda activate trellis2`.
+
 > [!WARNING]
 > Because of the error:
 > > AttributeError: module 'PIL._webp' has no attribute 'HAVE_WEBPANIM'
@@ -81,19 +94,6 @@ git checkout repulsio/hyperstack
 ```shell
 pip install Pillow==10.4.0
 ```
-
-> [!IMPORTANT]
-> Here is the [link to the diff](https://github.com/microsoft/TRELLIS.2/compare/main...repulsio:repulsio/hyperstack) between
->
-> - the official `microsoft/TRELLIS - main` and
-> - my fork `repulsio/TRELLIS - repulsio/hyperstack`
-
-> [!NOTE]
-> The above command creates a Conda virtual environment named `trellis2` and activates it.
-> 
-> All of the below commands expect that the virtual environment `trellis2` is activated.
-> 
-> If you need to reactivate it, run `conda activate trellis2`.
 
 > [!WARNING]
 > Unfortunately, `TRELLIS.2` has 2 gated models as dependencies:
